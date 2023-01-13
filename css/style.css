@@ -1,0 +1,1217 @@
+/************* polices de Google Fonts ***************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Lobster+Two&family=VT323&display=swap");
+
+/********* body ******/
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/************** TITLE (h1 at h6) **************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+
+h1 {
+    font-family: "Lobster Two", cursive;
+    color: #252525;
+    font-size: 3em;
+    line-height: 50px;
+}
+
+
+h2 {
+    font-family: "Lobster Two", cursive;
+    color: #353535;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+
+h3,
+h3 a {
+    color: #454545;
+}
+
+
+p {
+  
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+
+/********* Logo Text ******/
+.txt{
+  font-family: "Corinthia", cursive;
+  padding: 16px;
+  font-size: 4rem;
+  color: #575757;
+}
+/* émojis */
+.emoji {
+  font-size: 2rem;
+}
+
+/**************** Improve font rendering on Chrome ****************/
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Définir les propriétés des liens */
+a {
+    color: #252525;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none !important;
+}
+
+/* Définir les propriétés des liens au survol, au focus et en action */
+a:hover,
+a:active,
+a:focus {
+    color: grey;
+    outline: none;
+}
+
+
+
+/******** Set scroll bar color  ************/
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.section-title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+ h2 {
+    margin: 0;
+    text-align: justify;
+}
+.section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****************SECTION *****************/
+.section-title {
+    padding-bottom: 40px;
+}
+.section-title h2 {
+    margin: 0;
+}
+.section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+
+
+section {
+  position: relative;
+  padding: 100px 0;
+}
+
+/**************  Properties of overlays ***************/
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Set properties for  #menu */
+
+#menu {
+    text-align: center;
+}
+
+.about-image img,
+.team-thumb img {
+    width: 100%;
+}
+
+
+/* Set section button properties */
+.section-btn {
+    background: grey;
+    border-radius: 0;
+    border: 0;
+    color: #f9f9f9;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 10px 25px;
+    transition: 0.5s 0.2s;
+}
+
+/* Set preloader properties */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+/* Set loading icon properties */
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+}
+.spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner 0.9s linear infinite;
+}
+/* Keyframes to create a spinner animation */
+@-webkit-keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/******************** NAVBAR *********************/
+.custom-navbar {
+    border: none;
+    margin-bottom: 0;
+    padding: 25px 0;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*  the navbar when it is at the top of the page */
+.top-nav-collapse {
+    background: #ffffff;
+}
+
+/*  the navigation elements on the left of the navbar */
+.custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: 8em;
+}
+
+/* Navbar navigation link styles */
+.custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+/* Navbar Section Button  */
+.custom-navbar .navbar-nav.navbar-right .section-btn {
+    display: inline-block;
+    margin: 0.2em 0 0 1em;
+}
+.custom-navbar .navbar-nav.navbar-right .section-btn:hover {
+    background: #292929;
+    color: #ffffff;
+}
+.custom-navbar .navbar-nav.navbar-right .section-btn:focus {
+    color: #ffffff;
+}
+.custom-navbar .navbar-nav.navbar-right .section-btn a {
+    padding: 10px 25px;
+}
+.custom-navbar .nav .section-btn a:hover {
+    color: #ffffff;
+}
+
+/* Navbar navigation link styles */
+.custom-navbar .nav li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #575757;
+    padding-right: 22px;
+    padding-left: 22px;
+    text-transform: uppercase;
+}
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: burlywood;
+}
+
+/*  navigation links when hovered or focused */
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+}
+
+/*  active navbar navigation links */
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+}
+
+/* Navbar menu button */
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+.custom-navbar .navbar-toggle {
+    background-color: transparent;
+}
+.custom-navbar .navbar-toggle .icon-bar {
+    background: #252525;
+    border-color: transparent;
+}
+
+
+/* Home Section Styles */
+#home {
+    padding: 0;
+}
+#home h1 {
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+#home h3 {
+    color: #f9f9f9;
+    font-size: 14px;
+    line-height: inherit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Slider based on screen width */
+@media (min-width: 768px) {
+  .slider .col-md-8 {
+      padding-left: 0;
+  }
+}
+
+/* Slider navpoint */
+.slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2em;
+    justify-content: center;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: block;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 7px 10px;
+    border: 2px solid #d9d9d9;
+    background: transparent;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ffffff;
+    border-color: transparent;
+}
+
+/* slider captions */
+.slider .caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(20, 20, 20, 0.2);
+    height: 100%;
+    color: #fff;
+    cursor: e-resize;
+    padding: 4em 0 0 2em;
+}
+
+/* slider elements */
+.slider .item {
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+
+
+
+/* slider background elements */
+.slider .item-first {
+    background-image: url(../images/slider-image1.jpg);
+}
+.slider .item-second {
+    background-image: url(../images/slider-image2.jpg);
+}
+.slider .item-third {
+    background-image: url(../images/slider-image3.jpg);
+}
+
+/* slider section buttons */
+.slider .item-second .section-btn {
+    background: #292929;
+}
+.slider .item-second .section-btn:hover {
+    background: #ffffff;
+}
+.slider .item-third .section-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+.slider .item-third .section-btn:hover,
+.slider .item-third .section-btn:focus {
+    background: grey;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+/* "About" section */
+#about {
+    padding-bottom: 0;
+}
+.about-info {
+    padding: 0 6em 5em 0;
+}
+.about-info .section-title {
+    padding-bottom: 20px;
+}
+.about-image {
+    position: absolute;
+}
+
+#team {
+    background: #f9f9f9;
+}
+.team-thumb {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.team-info {
+    padding: 10px 30px 20px 30px;
+}
+
+
+
+/*  social media icons when hovering over team items */
+.team-thumb .social-icon li a {
+    background: #292929;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #d9d9d9;
+    font-size: 20px;
+    margin: 15px 5px 0 5px;
+}
+/* menu section */
+.title{
+  text-align: center;
+}
+
+#menu {
+    padding-bottom: 0;
+}
+#menu .container {
+    width: 100%;
+}
+#menu .col-md-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+  width: 50%; 
+  border-top: 1px solid black; 
+}
+
+
+
+/* image in the "Menu" section */
+.menu-thumb img {
+    width: 100%;
+    transition: 0.5s;
+}
+.menu-thumb:hover img {
+    transform: scale(1.15);
+}
+
+/* overlay when hovering over menu items */
+#menu .menu-thumb {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 102%;
+}
+.menu-thumb .menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
+}
+
+
+
+/******************* footer ************************/
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 120px 0;
+    padding-bottom: 80px;
+  }
+  
+  /* Titre de la section */
+  footer .section-title {
+    padding-bottom: 10px;
+  }
+  
+  
+  footer h2 {
+    font-size: 20px;
+  }
+  
+
+  footer a,
+  footer p {
+    color: #909090;
+  }
+  
+ footer strong {
+    color: #d9d9d9;
+  }
+  
+  
+  footer address p {
+    margin-bottom: 0;
+  }
+  
+  /* Footer information and social icons */
+  .footer-info,
+  footer .social-icon {
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 20px;
+   
+  }
+  .col-md-3 {
+    display: flex;
+    justify-content: center;
+ }
+ 
+  
+
+  /* Footer opening hours section */
+  .footer-open-hour {
+   background: url("../images/footer-open-hour-bg.jpg") center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 40px 0 40px 40px;
+    width: 100% auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  /* Overlay effect on opening hours section */
+  .footer-open-hour::after {
+    background: rgba(29, 29, 29, 0.85);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2222;
+  }
+  
+  
+  .footer-open-hour h2 {
+    color: #ffffff;
+  }
+  
+  
+  .footer-open-hour p {
+    color: #d9d9d9;
+  }
+  
+
+  .footer-open-hour strong {
+    color: #f9f9f9;
+  }
+  
+/* icônes sociales */
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*  social icon list items */
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  /* social icons links  */
+  .social-icon li a {
+    border-radius: 100px;
+    color: #467df1;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+  }
+  
+  /* social icon links on hover  */
+  .social-icon li a:hover {
+    background: grey;
+    color: #ffffff;
+  }
+  
+  
+/******************** Style of the navigation bar on small screens *************************/
+  .custom-navbar {
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+
+  .custom-navbar .nav li a {
+    line-height: normal;
+    padding: 10px;
+  }
+  
+  
+  .custom-navbar .navbar-brand,
+  .top-nav-collapse .navbar-brand {
+    color: #252525;
+    font-weight: 600;
+  }
+  
+ 
+  .custom-navbar .nav li a,
+  .top-nav-collapse .nav li a {
+    color: #575757;
+  }
+  
+
+  .custom-navbar .navbar-nav.navbar-right li {
+    display: inline-block;
+  }
+  
+
+  .custom-navbar .navbar-nav.navbar-right .section-btn {
+    display: block !important;
+    width: 50%;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+  }
+  
+ 
+  .custom-navbar .section-btn a {
+    color: #ffffff !important;
+  }
+  
+  
+  .slider .caption {
+    padding: 0;
+  }
+  
+  
+  .menu-thumb .menu-info {
+    top: 80%;
+  }
+  
+ 
+  footer {
+    padding: 60px 0;
+    padding-bottom: 60px;
+  }
+
+  .wow {
+    text-align: center;
+  }
+
+  
+/*********************** CARTES ************************************
+  /* Style du conteneur de contenu */
+  .content-wrapper {
+    margin: 0 auto;
+    column-gap: 200px;
+    max-width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    display: flex;
+  
+  }
+
+ /* Style of news cards */
+.news-card {
+    display: flex;
+    border: 0px solid aqua;
+    margin: 0.5rem;
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    max-width:200px;
+    flex-basis: 33.33%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  
+ 
+  
+  /* Added gradient background to news cards */
+  .news-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+    z-index: 0;
+  }
+  
+/* News Card Link Style */
+.news-card__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+ 
+  
+  /* News card image style */
+  .news-card__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: -1;
+  }
+  
+ 
+  .news-card__text-wrapper {
+    position: absolute;
+    bottom: 0rem;
+    padding: 1rem;
+    color: white;
+    transition: background-color 1.5s ease;
+  }
+  
+ 
+  .news-card__title {
+    transition: color 1s ease;
+    margin-bottom: 0.5rem;
+  }
+  
+
+.news-card__post-name {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding-left: 5px;
+    color: #ccc;
+  }
+  
+  
+  .news-card__details-wrapper {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s ease, opacity 1s ease;
+  }
+  
+
+   
+    .news-card:hover .news-card__text-wrapper {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .news-card:hover .news-card__title {
+      color: white;
+    }
+    .news-card:hover .news-card__image {
+      transform: scale(1.2);
+      z-index: -1;
+    }
+  
+  
+  /* Style of the news card article excerpt */
+  .news-card__excerpt {
+    font-weight: 300;
+  }
+  
+/* "Read more" button for news cards */
+.news-card__read-more {
+    background: black;
+    color: #bbb;
+    display: block;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    border: 1px solid #444;
+    font-size: 0.8rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-decoration: none;
+    width: 7rem;
+    margin-left: auto;
+    position: relative;
+    z-index: 5;
+  
+}
+
+/********************** Signature **************************/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+.signature > div {
+  width: 600px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+}
+
+path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+.line1 {
+  stroke-dasharray: 30;
+  animation: write1 6s ease-in infinite;
+}
+.line2 {
+  stroke-dasharray: 43; 
+  animation: write2 6s ease-in infinite;
+}
+.line3 {
+  stroke-dasharray: 16;
+  animation: write3 6s ease-in infinite;
+}
+.line4 {
+  stroke-dasharray: 23;
+  animation: write4 6s ease-in infinite;
+}
+.line5 {
+  stroke-dasharray: 30;
+  animation: write5 6s ease-in infinite;
+}
+.line6 {
+  stroke-dasharray: 97;
+  animation: write6 6s ease-in infinite;
+}
+.line7 {
+  stroke-dasharray: 81;
+  animation: write7 6s ease-in infinite;
+}
+
+@keyframes write1 {
+    0% {
+        stroke-dashoffset: 30;
+    }
+    10% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write2 {
+    0%, 12% {
+        stroke-dashoffset: 44;
+    }
+    24% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write3 {
+    0%, 25% {
+        stroke-dashoffset: 17;
+    }
+    33% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write4 {
+    0%, 35% {
+        stroke-dashoffset: 23;
+    }
+    49% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write5 {
+    0%, 51% {
+        stroke-dashoffset: 31;
+    }
+    61% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write6 {
+    0%, 63% {
+        stroke-dashoffset: 98;
+    }
+    80% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write7 {
+    0%, 82% {
+        stroke-dashoffset: 82;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/********* FOOTER ******************/ 
+  
+
+.footer-open-hour{
+  right: 0;
+  bottom: 0;
+  margin-top: 30px;
+}
+
+
+/************** FORMS **********************/
+
+.reservation, .formul {
+  margin: 1em auto;
+  text-align: center;
+  color: #FFF;
+}
+
+#contact input {
+  height: 55px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 8em;
+  color: #000000;
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 2rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #fff;
+  border: 1px solid;
+  color: balck;
+  border-radius: 8px 8px 8px ;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: grey;
+  border-color: white;
+  min-width: 300px;
+  border-radius: 8px 8px 8px ;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  transition: 0.5s all;
+  opacity: 0.8;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/******************** MEDIA QUERIES ***************/
+
+/* Navbar styles based on screen width */
+@media (min-width: 768px) {
+  .custom-navbar {
+      border-bottom: 0;
+      background: 0 0;
+  }
+  .custom-navbar.top-nav-collapse {
+      background: #ffffff;
+      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      padding: 12px 0;
+  }
+  .top-nav-collapse .navbar-brand {
+      color: #454545;
+  }
+  .top-nav-collapse .nav li a {
+      color: #575757;
+  }
+  .top-nav-collapse .nav .section-btn a {
+      color: #ffffff;
+  }
+}
+
+
+/*  navigation bar on small screens */
+@media screen and (max-width: 1170px) {
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: inherit;
+  }
+}
+
+/* sections on small screens  */
+@media only screen and (max-width: 1200px) {
+  .about-info {
+    padding-right: 0;
+  }
+  .about-image {
+    position: relative;
+  }
+}
+
+/*  sections on medium screens */
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 60px 0;
+  }
+  .custom-navbar .section-btn {
+    margin-left: 1em;
+  }
+  .slider .item {
+    background-position: center;
+  }
+  .about-info {
+    padding: 0;
+  }
+  .team-info {
+    margin-bottom: 50px;
+  }
+  #menu .menu-thumb {
+    width: 103%;
+  }
+
+}
+
+/* navigation bar on medium screens  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-navbar .nav li a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/*  titles on small screens */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h1,
+  h2,
+  h3 {
+    line-height: normal;
+  }
+}
+
+/* Style of titles on very small screens */
+@media only screen and (max-width: 580px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .menu-thumb .menu-info {
+    top: 60%;
+  }
+  
+}
+
+ /* Adjusting the height of news cards on large screens */
+
+
+ /* Styles applied when the news card is hovered over (screen of 200px and higher) */
+@media (max-width: 900px) {
+  .news-card:hover .news-card__details-wrapper {
+    max-height: 20rem;
+    opacity: 1;
+    display: inline-block;
+  }
+ 
+}
+
+
+/****** CARTE ******/
+ /* Adjusting the height of news cards on large screens */
+ @media (max-width: 1500px) {
+  .news-card {
+    height: 20rem;
+    padding: 5px;
+    flex-basis: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-wrapper{
+  display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
