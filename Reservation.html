@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <title>🍽️Restaurant "Le Quai Antique"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!------------ External CSS ------------->
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+   <!-------- CDN ------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+    
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <header>
+        
+        <!------------------ NAVBAR -------------------->
+        <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!---------------- Logo Text -------------------->
+                    <span class="emoji">👨🏻‍🍳</span><span class="txt">Le Quai Antique</span>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                        <li><a href="index.html" class="smoothScroll"> 🏚️ Retour Accueil</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </header>
+
+    </header>
+
+    <!------ Background  --------->
+    <video src="video/Tranchage - 11612.mp4"  autoplay loop ></video>
+
+    <!----------------------- FORMS RESERVATION --------------------------------->
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+
+                <h1 class="reservation">Reservez Votre Table</h1>
+                <form method="post" action='database.php'>
+                    <fieldset>
+                        <label for="first-name">NOM : <input id="first-name" name="nom" type="text" placeholder="Votre Nom ici" required /></label>
+                        <label for="email">EMAIL: <input id="email" name="email" type="email" placeholder="Votre mail ici"required /></label>
+                        <label for="tel">MOBILE: <input id="tel" name="tel" type="text" placeholder="Mobile" required /></label>
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="referrer">Avez-vous des allergènes ?</label>
+                        <label for="personal-account"><input  type="radio" name="allergenes" class="inline" value="oui" /> Oui</label>
+                        <label for="business-account"><input  type="radio" name="allergenes" class="inline" value="non" /> Non</label>
+                        <textarea id="bio" name="details_allergenes" rows="3" cols="30" placeholder="Merci de préciser"></textarea>
+                        </label>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+
+                        <label for="date">Date : <input id="date" name="date" type="date" required /></label>
+                        <label for="time">Heure de réservation : 
+                    <select  id="hour" name="heure"></select>
+                </label>
+
+                        <label for="referrer">COUVERTS
+          <select type="number" id="place" name="couverts" onsubmit="return checkCouverts()">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+          </select>
+        </label>
+                        <label for="bio">Message:
+          <textarea id="bio" name="message" rows="3" cols="30" placeholder="(facultatif)"></textarea>
+        </label>
+                    </fieldset>
+                    <input type="submit" name="submit" value="Reservez" style="font-weight: bold; color: white;" />
+                </form>
+
+        <!-------------------------- SCRIPTS LIBRARY ------------------------->
+                <script src="js/jquery.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/jquery.magnific-popup.min.js"></script>
+                <script src="js/smoothscroll.js"></script>
+                <script src="js/custom.js"></script>
+
+</body>
+
+</html>
