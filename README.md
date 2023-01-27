@@ -67,3 +67,6 @@ SetEnv DB_NAME "DB_NAME"
 
 [sendmail](https://www.sendmail.com/documentation) 
     Note: Make sure that the paths specified in the .htaccess and .htpasswd files are correct and accessible.
+    
+ # Registration tutorial Source code of the video to create a login / registration system in PHP. 
+ # Installation - Import 'users.sql' into your database - Modify 'config.php' with your credentials
