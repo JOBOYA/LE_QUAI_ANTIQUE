@@ -6,9 +6,16 @@
 /*
  *  Owl Carousel - Core
  */
+
+ body {
+  overflow-x: hidden;
+}
+
+
 .owl-carousel {
+  overflow: hidden;
   display: none;
-  width: 100%;
+  
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
@@ -167,3 +174,6 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+
+ 

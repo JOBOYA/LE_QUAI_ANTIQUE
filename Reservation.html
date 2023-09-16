@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-    
     <title>🍽️Restaurant "Le Quai Antique"</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <!------------ External CSS ------------->
-  
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -20,19 +20,22 @@
 
     
     <!-- Main CSS -->
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+   
+   <!--------CDN JQUERY------------>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-   <!-------- CDN ------------>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-
-
-    
 </head>
 
 <body>
 
-    <!-- Preloader -->
+
+  
+
+    <!-- Preloader ---->
     <section class="preloader">
         <div class="spinner">
             <span class="spinner-rotate"></span>
@@ -83,7 +86,8 @@
 
 
                 <h1 class="reservation">Reservez Votre Table</h1>
-                <form method="post" action='database.php'>
+                <form id="reservationForm" method="post">
+
                     <fieldset>
                         <label for="first-name">NOM : <input id="first-name" name="nom" type="text" placeholder="Votre Nom ici" required /></label>
                         <label for="email">EMAIL: <input id="email" name="email" type="email" placeholder="Votre mail ici"required /></label>
@@ -126,16 +130,34 @@
                     <input type="submit" name="submit" value="Reservez" style="font-weight: bold; color: white;" />
                 </form>
 
+
+
+
+
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModalBtn">&times;</span>
+                        <p>Votre réservation a bien été enregistrée et vous recevrez un mail de confirmation.</p>
+
+                    </div>
+                </div>
+                
+                
+                  
+   
         <!-------------------------- SCRIPTS LIBRARY ------------------------->
-                <script src="js/jquery.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/jquery.stellar.min.js"></script>
-                <script src="js/wow.min.js"></script>
-                <script src="js/owl.carousel.min.js"></script>
-                <script src="js/jquery.magnific-popup.min.js"></script>
-                <script src="js/smoothscroll.js"></script>
-                <script src="js/custom.js"></script>
+        <script src="js/jquery.js "></script>
+        <script src="js/bootstrap.min.js "></script>
+        <script src="js/jquery.stellar.min.js "></script>
+        <script src="js/wow.min.js "></script>
+        <script src="js/owl.carousel.min.js "></script>
+        <script src="js/jquery.magnific-popup.min.js "></script>
+        <script src="js/smoothscroll.js "></script>
+        <script src="js/custom.js "></script>
+        <script src="api.js"></script>
+                
+
+          
+
 
 </body>
-
-</html>
