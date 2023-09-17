@@ -12,8 +12,6 @@ body {
 
 
 
-
-
 /************** TITLE (h1 at h6) **************/
 h1,
 h2,
@@ -57,7 +55,8 @@ h3 a {
 p {
   
     color: #757575;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: justify;
     font-weight: normal;
     line-height: 24px;
     overflow: hidden;
@@ -870,6 +869,20 @@ footer {
 }
 
 /********************** Signature **************************/
+.text-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s ease-out forwards;
+  stroke: black;
+  fill: none;
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
 
 
 *, *:before, *:after {
@@ -979,6 +992,17 @@ path {
     100% {
         stroke-dashoffset: 0;
     }
+}
+
+
+
+
+/************Menu***********************/
+#menu img {
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
 }
 
 /********* FOOTER ******************/ 
@@ -1181,6 +1205,22 @@ video {
     top: 60%;
   }
   
+}
+
+/*******SVG***************/
+.word {
+  animation: blow-out both ease-in;
+  animation-timeline: --section;
+  animation-range: exit-crossing 10% exit 0%;
+}
+keyframes blow-out {
+  to { transform: translate3d(0.05ch, 0, 99vh); }
+}
+
+
+.section__content {
+  transform-style: preserve-3d; 
+  perspective: 100vh;
 }
 
  /* Adjusting the height of news cards on large screens */

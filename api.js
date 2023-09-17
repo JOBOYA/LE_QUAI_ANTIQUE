@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             data[key] = value; 
         });
 
-        fetch('http://localhost:3000/reservation', {
+        fetch('https://laboheme.onrender.com/reservation', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
