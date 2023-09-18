@@ -56,7 +56,11 @@
                     </button>
 
                     <!---------------- Logo Text -------------------->
-                    <span class="emoji">👨🏻‍🍳</span><span class="txt">Le Quai Antique</span>
+                    <span class="emoji">
+                        <a href="index.html">
+                        <img src="images/laboheme.png"  alt="logo" width="300px" height="80px">
+                        </a>
+                    </span>
                 </div>
 
                 <div class="collapse navbar-collapse">
@@ -127,7 +131,28 @@
           <textarea id="bio" name="message" rows="3" cols="30" placeholder="(facultatif)"></textarea>
         </label>
                     </fieldset>
-                    <input type="submit" name="submit" value="Reservez" style="font-weight: bold; color: white;" />
+
+                 
+                    <div class="text-center">  
+                        <button type="submit" id="submitBtn" class="btn btn-lg mx-auto d-block" style="font-weight: bold; color: white; background-color: #5c5c5c;">
+                            <span id="buttonText">Reservez</span>  <!-- Ajout d'un id pour le texte -->
+                            <div id="loader" class="spinner-border text-light d-inline-block" role="status" style="display:none;">
+                                <span class="visually-hidden">Réservation en cours...</span>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    
+
+                
+  
+                    
+                    
+                        
+                      
+                      
+                      
+                    </div>
                 </form>
 
 

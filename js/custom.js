@@ -131,4 +131,3 @@ window.onload = function() {
   document.querySelector('input[name="allergenes"][value="' + allergenes + '"]').checked = true;
 };
 
-
