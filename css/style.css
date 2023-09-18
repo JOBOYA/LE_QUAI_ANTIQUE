@@ -1214,20 +1214,6 @@ video {
 }
 
 /*******SVG***************/
-.word {
-  animation: blow-out both ease-in;
-  animation-timeline: --section;
-  animation-range: exit-crossing 10% exit 0%;
-}
-keyframes blow-out {
-  to { transform: translate3d(0.05ch, 0, 99vh); }
-}
-
-
-.section__content {
-  transform-style: preserve-3d; 
-  perspective: 100vh;
-}
 
  /* Adjusting the height of news cards on large screens */
 
